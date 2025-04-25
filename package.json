@@ -1,6 +1,6 @@
 {
   "name": "tailwindcss-namespace",
-  "version": "0.1.0-alpha.1",
+  "version": "0.1.0-alpha.2",
   "description": "Vite plugin that compiles Tailwind CSS utility classes into namespaced class names",
   "type": "module",
   "main": "dist/index.js",
@@ -8,7 +8,8 @@
   "files": [
     "dist",
     "README.md",
-    "LICENSE"
+    "LICENSE",
+    "CHANGELOG.md"
   ],
   "exports": {
     ".": {
