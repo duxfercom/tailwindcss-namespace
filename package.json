@@ -1,0 +1,51 @@
+{
+  "name": "tailwindcss-namespace",
+  "version": "0.1.0-alpha.1",
+  "description": "Vite plugin that compiles Tailwind CSS utility classes into namespaced class names",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "prepublishOnly": "npm run build",
+    "fix": "npm pkg fix"
+  },
+  "keywords": [
+    "tailwindcss",
+    "vite-plugin",
+    "css",
+    "namespace",
+    "utility-classes"
+  ],
+  "author": "DuxferCom",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duxfercom/tailwindcss-namespace.git"
+  },
+  "bugs": {
+    "url": "https://github.com/duxfercom/tailwindcss-namespace/issues"
+  },
+  "homepage": "https://github.com/duxfercom/tailwindcss-namespace#readme",
+  "devDependencies": {
+    "@types/node": "^22.14.1",
+    "tsup": "^8.0.2",
+    "typescript": "~5.7.2"
+  },
+  "peerDependencies": {
+    "tailwindcss": ">=3.0.0",
+    "vite": ">=6.0.0"
+  }
+}

@@ -1,0 +1,7 @@
+# Development files
+src/
+tsconfig.json
+tsup.config.ts
+.github/
+.vscode/
+*.log
